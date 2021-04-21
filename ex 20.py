@@ -1,0 +1,6 @@
+num = int(input('Digite um número de 0 a 9999: '))
+numlock = str(num)
+print('Milhar: {}'.format(numlock[-4:-3]))
+print('Centena: {}'.format(numlock[-3:-2]))
+print('Dezena: {}'.format(numlock[-2:-1]))
+print('Unidade: {}'.format(numlock[-1]))

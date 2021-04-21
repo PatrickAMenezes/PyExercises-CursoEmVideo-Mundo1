@@ -1,0 +1,7 @@
+nome = str(input('Digite seu nome completo: ')).strip()
+nomesemesp = ''.join(nome.split())
+print(nome.upper())
+print(nome.lower())
+print(len(nome))
+print(len(nomesemesp))
+print(len(nome.split()[0]))

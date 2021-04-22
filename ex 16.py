@@ -1,7 +1,7 @@
 from random import sample
-a1 = str(input('O nome do primeiro aluno: '))
-a2 = str(input('O nome do segundo: '))
-a3 = str(input('O nome do terceiro: '))
-a4 = str(input('O nome do quarto: '))
-aluns = [a1, a2, a3, a4]
-print('A ordem de apresentação é {}'.format(sample(aluns, k=4)))
+s1 = str(input('The name of the first student: '))
+s2 = str(input('The second: '))
+s3 = str(input('The third: '))
+s4 = str(input('The fourth: '))
+students = [s1, s2, s3, s4]
+print('The order of presentation is {}'.format(sample(students, k=4)))

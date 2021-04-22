@@ -1,2 +1,2 @@
-nome = str(input('Dê um nome: ')).strip()
-print('Tem Silva no nome: {}'.format('Silva' in nome.title()))
+name = str(input('Give a name: ')).strip()
+print('Has Silva in name: {}'.format('Silva' in name.title()))

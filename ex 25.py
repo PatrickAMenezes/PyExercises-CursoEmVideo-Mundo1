@@ -1,9 +1,9 @@
 from random import randint
-num = int(input('Digite um número de 0 a 5: '))
-numsort = randint(0, 5)
-if num == numsort:
-    print('Parabéns você ganhou!')
+num = int(input('Enter a number between 0 and 5: '))
+numdrawn = randint(0, 5)
+if num == numdrawn:
+    print('Congratulations you won!')
 else:
-    print('Parece que você perdeu :(, o número que você escolheu\n'
-    'foi {}, e o número sorteado foi {}'.format(num, numsort))
-print('Foi um prazer jogar com você ^-^')
+    print('Oh, It seems you lost :(, the number that you choosed\n'
+    'was {}, and the number drawn was{}'.format(num, numdrawn))
+print('It was a pleasure to play with you ^-^')

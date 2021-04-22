@@ -1,3 +1,3 @@
-nome = str(input('Diga o nome de uma cidade: ')).strip()
-santo = nome.title()
-print('Essa cidade começa com o nome Santo: {}'.format(santo.startswith('Santo')))
+name = str(input('Say the name of a city: ')).strip()
+santo = name.title()
+print('This city begins with the name Santo: {}'.format(santo.startswith('Santo')))

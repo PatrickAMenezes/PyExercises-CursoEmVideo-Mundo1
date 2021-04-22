@@ -1,8 +1,8 @@
 import math
-ang = int(input('Dê um ângulo qualquer: '))
-angrad = math.radians(ang)
-cos = math.cos(angdeg)
-sen = math.sin(angdeg)
-tan = math.tan(angdeg)
-print('O seno, cosseno e tangente de {}° são, respectivamente, {:.2f}, {:.2f} e {:.2f}'
-      .format(ang, sen, cos, tan))
+angle = int(input('Give any angle: '))
+anglerad = math.radians(angle)
+cos = math.cos(anglerad)
+sin = math.sin(anglerad)
+tan = math.tan(anglerad)
+print('The sine, cossino and tangent of {}° are, respectively, {:.2f}, {:.2f} and {:.2f}'
+      .format(angle, sin, cos, tan))

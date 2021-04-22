@@ -1,5 +1,5 @@
-dalug = int(input('Quantos dias alugador: '))
-kmrod = int(input('Quantos km rodados: '))
-valtotal = (dalug*60) + (kmrod*0.15)
-print('O total a pagar, levando em conta que o carro foi alugado\n'
-      'por um total de {}dias e rodou {}km, é de R${:.2f}'.format(dalug, kmrod, valtotal))
+daysr = int(input('How many days rented: '))
+kmrun = int(input('How many kilometers run: '))
+amount = (daysr*60) + (kmrun*0.15)
+print('The amount to pay, considering that the car was rented\n'
+      'for a total of {}days and traveled {}km, is R${:.2f}'.format(daysr, kmrun, amount))

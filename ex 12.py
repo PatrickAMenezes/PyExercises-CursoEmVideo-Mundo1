@@ -1,2 +1,2 @@
-numb = float(input('Digite um número: '))
-print('A porção inteira de {} é {:.0f}'.format(numb, numb))
+number = float(input('Type a number: '))
+print('The entire portion of {} is {:.0f}'.format(number, number))

@@ -1,8 +1,8 @@
 from random import choice
-a1 = str(input('O nome do primeiro aluno: '))
-a2 = str(input('O nome do segundo: '))
-a3 = str(input('O nome do terceiro: '))
-a4 = str(input('O nome do Quarto: '))
-aluns = [a1, a2, a3, a4]
-aluesc = choice(aluns)
-print('O aluno escolhido pra apagar o quadro é {}'.format(aluesc))
+a1 = str(input('The name of the first student: '))
+a2 = str(input('The second: '))
+a3 = str(input('The third: '))
+a4 = str(input('The fourth: '))
+students = [a1, a2, a3, a4]
+chosen = choice(students)
+print('O aluno escolhido pra apagar o quadro é {}'.format(chosen))

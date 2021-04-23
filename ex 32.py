@@ -1,10 +1,10 @@
-reta1 = float(input('Comprimento da reta 1: '))
-reta2 = float(input('Comprimento da reta 2: '))
-reta3 = float(input('Comprimento da reta 3: '))
-caso1 = reta3 < reta1 + reta2 
-caso2 = reta2 < reta1 + reta3
-caso3 = reta1 < reta2 + reta3
-if caso1 and caso2 and caso3:
-    print('As três retas formam um triângulo')
+line1 = float(input('Length of line 1: '))
+line2 = float(input('Length of line 2: '))
+line3 = float(input('Length of line 3: '))
+case1 = line3 < line1 + line2 
+case2 = line2 < line1 + line3
+case3 = line1 < line2 + line3
+if case1 and case2 and case3:
+    print('The three lines form a triangle')
 else:
-    print('As três retas não formam um triângulo')
+    print("The three lines don't form a triangle")

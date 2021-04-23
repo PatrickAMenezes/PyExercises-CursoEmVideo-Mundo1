@@ -1,6 +1,6 @@
-vel = int(input('Qual é a velocidade do carro em km/h: '))
-if vel > 80:
-    print('Você ultrapassou o limite de velocidade, sua multa é de R${:.2f}'
-          .format((vel - 80)*7))
+spd = int(input('Which is the speed of the car in km/h: '))
+if spd > 80:
+    print('You crossed the speed limit, your traffic ticket is of R${:.2f}'
+          .format((spd - 80)*7))
 else:
-    print('Você está no limite de velocidade, boa viajem :)')
+    print('You is in the speed limit, good travel :)')

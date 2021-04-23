@@ -1,5 +1,5 @@
-ano = int(input('Digite o ano: '))
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print('O ano {} é bissexto'.format(ano))
+year = int(input('Type the year: '))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('The year is {} is leap'.format(year))
 else:
-    print('O ano {} NÃO é bissexto'.format(ano))
+    print('The year {} is not leap'.format(year))

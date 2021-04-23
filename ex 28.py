@@ -1,7 +1,7 @@
-dist = int(input('Qual é a distância da viagem, em km: '))
-print('Sua viagem será de {}km.'.format(dist))
+dist = int(input('How far is the trip, in km: '))
+print('Your travel will be of {}km.'.format(dist))
 if dist <= 200:
-    preço = dist*0.50
+    price = dist*0.50
 else:
-    preço = dist*0.45
-print('O valor da passagem será de R${:.2f}.'.format(preço))
+    price = dist*0.45
+print('The value of the ticket will be of R${:.2f}.'.format(price))

@@ -1,4 +1,4 @@
-num = int(input('Digite um número de 0 a 9999: '))
+num = int(input('Enter a number between 0 and 9999: '))
 numlock = str(num)
 print('Thousand: {}'.format(numlock[-4:-3]))
 print('hundred: {}'.format(numlock[-3:-2]))

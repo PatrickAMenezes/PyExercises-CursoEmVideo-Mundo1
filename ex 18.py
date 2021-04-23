@@ -1,30 +1,30 @@
-frase = 'I am learning Python'
-#Fatiamento
-print(frase[17])
-print(frase[0:16])
-print(frase[5:22:2])
-print(frase[8:])
-print(frase[3::2])
-print(frase[:8])
-print(frase[:8:2])
-#Análise
-print(len(frase))
-print(frase.count('o'))
-print(frase.count('e', 0, 11))
-print(frase.find('Pyth'))
-print(frase.find('Android')) #retorna -1 quando não é encontrado
-print('Py' in frase)
-#Transformação
-print(frase.replace('learning','suffering'))
-print(frase.upper())
-print(frase.lower())
-print(frase.title())
-print(frase.capitalize())
-frase2 = '   I love Python  '
-print(frase2.strip())
-print(frase2.rstrip())
-print(frase2.lstrip())
-#Divisão
-print(frase.split())
-#junção
-print('_'.join(frase))
+phrase = 'I am learning Python'
+#Slicing
+print(phrase[17])
+print(phrase[0:16])
+print(phrase[5:22:2])
+print(phrase[8:])
+print(phrase[3::2])
+print(phrase[:8])
+print(phrase[:8:2])
+#Analysis
+print(len(phrase))
+print(phrase.count('o'))
+print(phrase.count('e', 0, 11))
+print(phrase.find('Pyth'))
+print(phrase.find('Android')) #retorna -1 quando não é encontrado
+print('Py' in phrase)
+#Transformation
+print(phrase.replace('learning','suffering'))
+print(phrase.upper())
+print(phrase.lower())
+print(phrase.title())
+print(phrase.capitalize())
+phrase2 = '   I love Python  '
+print(phrase2.strip())
+print(phrase2.rstrip())
+print(phrase2.lstrip())
+#Division
+print(phrase.split())
+#junction
+print('_'.join(phrase))

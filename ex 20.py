@@ -14,5 +14,5 @@ for c in range (1, 5):
     if age < 20 and gender == 'W':
         minor_women += 1
 print('The older man is {} with {} years.'.format(older_name, older_man))
-print('The average age is {}'.format(a))
+print('The average age is {}.'.format(a))
 print('The quantity of women that have less than 20 years is {}.'.format(minor_women))

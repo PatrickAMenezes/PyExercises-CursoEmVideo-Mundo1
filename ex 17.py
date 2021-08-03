@@ -1,5 +1,4 @@
 student = list()
-classroom = list()
 print('-=-'*30)
 while True:
     name = str(input('Insert the name of the student: ')).strip().title()

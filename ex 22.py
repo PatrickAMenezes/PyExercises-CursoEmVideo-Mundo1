@@ -1,19 +1,17 @@
 data = []
 person = {}
+print('-'*50)
 while True:
     # Name
-    name = str(input('Name: ')).strip().title()
-    person['name'] = name
+    person['name'] = str(input('Name: ')).strip().title()
     # Age
-    age = int(input('Age: '))
-    while age < 0:
-        age = int(input('Invalid age, please try again: '))
-    person['age'] = age
+    person['age'] = int(input('Age: '))
+    while person['age'] < 0:
+        person['age'] = int(input('Invalid age, please try again: '))
     # Sex
-    sex = str(input('Sex[M/F]: ')).strip().upper()
-    while sex not in 'MF':
-        sex = str(input('Invalid sex, please try again.[M/F]: ')).strip().upper()
-    person['sex'] = sex
+    person['sex'] = str(input('Sex[M/F]: ')).strip().upper()
+    while person['sex'] not in 'MF':
+        person['sex'] = str(input('Invalid sex, please try again.[M/F]: ')).strip().upper()
     data.append(person.copy())
     cont = str(input('Do you want to continue?[y/n]: ')).strip().lower()[0]
     while cont not in 'yn':
@@ -61,4 +59,6 @@ else:
         else:
             print(otaa[p], end=', ')
     print('')
+print('-'*50)
+print(' '*21 + 'FINISHED'+' '*21)
 print('-'*50)

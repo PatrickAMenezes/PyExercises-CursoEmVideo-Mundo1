@@ -1,24 +1,24 @@
 from random import randint
+from time import sleep
 numbers = []
 def drawn_numbers():
-    n = 0
-    while n < 5:
+    for n in range(0, 5):
         numbers.append(randint(0, 10))
-        n += 1
 
 
 def sum_even():
-    nums = 0
+    num_sum = 0
     for n in range(len(numbers)):
         if numbers[n] % 2 == 0:
-            nums += numbers[n]
-    return nums
+            num_sum += numbers[n]
+    return num_sum
 
 
 drawn_numbers()
 print('-'*55)
 print('Drawing 5 numbers: ', end='')
 for n in numbers:
-    print(n, end=' ')
-print(f'\nAdding the even values of {numbers}, we have {sum_even()}')
+    print(n, end=' ', flush=True)
+    sleep(0.3)
+print(f'\nAdding the even values of {numbers}, we have {sum_even()}.')
 print('-'*55)

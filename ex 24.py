@@ -3,6 +3,8 @@ def area(w, h):
     print(f'The area value is {a}m².')
 
 
-base = float(input('Insert the width value (m): '))
+print('-'*35)
+width = float(input('Insert the width value (m): '))
 height = float(input('Insert the height value (m): '))
-area(base, height)
+area(width, height)
+print('-'*35)

@@ -9,6 +9,7 @@ def maior():
     print(f'The highest number informed was {max(numbers)}')
     print('-'*50)
 
+
 def cont():
     c = str(input('Do you want to continue?[y/n]: ')).strip().lower()[0]
     while c not in 'yn':
@@ -16,6 +17,7 @@ def cont():
     if c == 'y':
         numbers.clear()
     return c
+
 
 numbers = []
 while True:

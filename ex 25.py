@@ -4,5 +4,6 @@ def write(phrase):
     print(' '*2 + phrase)
     print('-'*size)
 
+
 phrase = str(input('Type a phrase: ')).strip()
 write(phrase)

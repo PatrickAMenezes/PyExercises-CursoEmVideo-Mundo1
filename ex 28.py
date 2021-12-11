@@ -6,12 +6,14 @@ def drawn_numbers():
         numbers.append(randint(0, 10))
         n += 1
 
+
 def sum_even():
     nums = 0
     for n in range(len(numbers)):
         if numbers[n] % 2 == 0:
             nums += numbers[n]
     return nums
+
 
 drawn_numbers()
 print('-'*55)

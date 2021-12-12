@@ -1,11 +1,13 @@
 from random import randint
 from time import sleep
+# Drawing the numbers
 numbers = []
 def drawn_numbers():
     for n in range(0, 5):
         numbers.append(randint(0, 10))
 
 
+# Making the sum of the even numbers
 def sum_even():
     num_sum = 0
     for n in range(len(numbers)):

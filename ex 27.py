@@ -1,4 +1,5 @@
-def maior():
+# Seeing the greatest number
+def high():
     print('-'*50)
     print('The numbers informed are: ', end='')
     for n in numbers:
@@ -10,6 +11,7 @@ def maior():
     print('-'*50)
 
 
+# Function to continue the program
 def cont():
     c = str(input('Do you want to continue?[y/n]: ')).strip().lower()[0]
     while c not in 'yn':
@@ -19,6 +21,7 @@ def cont():
     return c
 
 
+# Main program
 numbers = []
 while True:
     print('-'*50)
@@ -27,7 +30,7 @@ while True:
         for q in range(quantity_num):
             num = int(input(f'Insert the {q+1}º number: '))
             numbers.append(num)
-        maior()
+        high()
     else:
         print('-'*50)
         print('There\'s no number informed.')

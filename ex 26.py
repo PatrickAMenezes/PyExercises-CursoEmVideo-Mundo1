@@ -1,4 +1,5 @@
 from time import sleep
+# Counter Function
 def counter(beggining, final, step):
     print('-='*20)
     if step < 0:
@@ -21,6 +22,7 @@ def counter(beggining, final, step):
 
 counter(1, 10, 1)
 counter(10, 0, 2)
+# Choosing the parameters.
 print('Now it\'s your turn.')
 b = int(input('Beggining: '))
 f = int(input('Final: '))

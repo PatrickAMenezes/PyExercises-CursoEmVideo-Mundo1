@@ -1,5 +1,6 @@
 def read_int(num):
     num = str(input(num))
+    # Analysing if the string is numeric
     if num.isnumeric() == False:
         print('\033[1;31mERROR! Enter a valid integer.\033[m')
         print('-'*30)

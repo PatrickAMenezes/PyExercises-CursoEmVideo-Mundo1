@@ -1,11 +1,7 @@
 def readmoney(msg):
     while True:
-        inpt = str(input(msg)).strip()
-        if ',' in inpt or '.' in inpt:
-            break
+        inpt = str(input(msg)).strip().replace(',', '.')
+        if '.' in inpt or inpt.isnumeric() == True:
+            return float(inpt)
         elif inpt.isnumeric() == False:
-            print('ERROR: Invalid Value!')
-        else:
-            break
-    res = inpt.replace(',', '.')
-    return float(res)
+            print('\033[1;41mERROR: Invalid Value!\033[m')

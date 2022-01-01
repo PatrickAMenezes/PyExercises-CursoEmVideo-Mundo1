@@ -1,20 +1,29 @@
 from Functions import people, menu
+from Functions.line import line
 while True:
     m = menu.menu()
     if m == 0:
-        print('\033[1;32mFinished!\033[m')
+        print('\033[1;32mFinished!\033[m'.center(55))
+        line()
         break
     else:
         if m == 1:
             p = people.people()
-            print('-'*30, end='\n')
-            print('Registering...')
+            print(line(), end='\n')
+            if p >= 1:
+                print('Registering...'.center(44))
             for i in range(p):
                 arch = open('teste.txt', 'a')
-                arch.write('-'*30)
+                arch.write(line())
                 arch.write('\nName: ')
-                print('-'*30, end='\n')
-                arch.write(str(input('Name: ').strip().title()) + '\n')
+                print(line(), end='\n')
+                while True:
+                    try:
+                        arch.write(str(input('Name: ').strip().title()) + '\n')
+                    except:
+                        print('Invalid insert.')
+                    else:
+                        break
                 arch.write('Age: ')
                 while True:
                     try:
@@ -27,17 +36,17 @@ while True:
                     else:
                         arch.write(str(age) + '\n')
                         break
-                print('-'*30, end = '\n')
-                arch.write('-'*30 + '\n')
+                print(line(), end = '\n')
+                arch.write(line() + '\n')
                 if i == p:
                     arch.close()
         else:
             try:
                 arch = open('teste.txt', 'r')
-                print('-'*30)
-                print('Listing...')
+                print(line())
+                print('Listing...'.center(44))
                 print(arch.read())
             except FileNotFoundError:
-                print('-'*30)
-                print('Non-existent file.')
-                print('-'*30)
+                print(line())
+                print('Non-existent file'.center(45))
+                print(line())

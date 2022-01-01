@@ -1,3 +1,4 @@
+from Functions.main.line import line
 def people():
     while True:
         try:
@@ -6,4 +7,5 @@ def people():
             print('\033[1;31mInvalid input, insert a valid integer.\033[m')
         else:
             break
+        print(line(), end='\n')
     return qtt

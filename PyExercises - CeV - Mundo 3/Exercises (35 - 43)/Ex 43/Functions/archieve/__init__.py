@@ -1,36 +1,35 @@
 from Functions.main.line import line
 from Functions.main.people import people
-def registration():
+def registration(file):
     qtt = people()
     if qtt >= 1:
         print(line())
-        print('Registering...'.center(44))
+        print('\033[1mRegistering...\033[m'.center(53))
     for i in range(qtt):
-        arch = open('teste.txt', 'a')
+        arch = open(f'{file}.txt', 'a')
         arch.write(line())
         arch.write('\nName: ')
         print(line(), end='\n')
         while True:
             try:
-                name = str(input('Name: ').strip().title())
-                if name == '':
+                name = str(input('\033[1mName: ').strip().title())
+                if name == '' or name.isalpha() == False:
                     print('\033[1;31mInvalid name.\033[m')
                     continue
                 else:
                     arch.write(name + '\n')
+                    break
             except:
-                print('\033[1;31mInvalid name.\033[m')
-            else:
-                break
+                print('\033[1;31mInvalid input.\033[m')
         arch.write('Age: ')
         while True:
             try:
-                age = int(input('Age: '))
+                age = int(input('\033[1mAge: '))
                 if age < 0:
                     print('\033[1;31mInvalid age.\033[m')
                     continue
             except:
-                print('\033[1;31mInvalid age.\033[m')
+                print('\033[1;31mInvalid input.\033[m')
             else:
                 arch.write(str(age) + '\n')
                 break
@@ -40,13 +39,13 @@ def registration():
             arch.close()
 
 
-def reading():
+def reading(file):
     try:
-        arch = open('teste.txt', 'r')
+        arch = open(f'{file}.txt', 'r')
         print(line())
-        print('Listing...'.center(44))
-        print(arch.read())
+        print('\033[1mListing...\033[m'.center(53))
+        print('\033[1m', arch.read(), '\033[1m')
     except FileNotFoundError:
         print(line())
-        print('Non-existent file'.center(45))
+        print('\033[1mNon-existent file\033[m'.center(45))
         print(line())

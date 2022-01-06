@@ -1,6 +1,6 @@
 # Exercises of Python - Curso Em Vídeo_Mundo1
 This README is to explain the funcionality of each exercise.
-I made this exercises for learn python by the course of Curso Em Vídeo - World 1.
+I made this exercises for learn python by the course of Curso Em Vídeo.
 ------------------------------------------------------------------------------------
 00) Is a welcome message to someone with a reading of the date of birth and a
 calculation of sum between two numbers

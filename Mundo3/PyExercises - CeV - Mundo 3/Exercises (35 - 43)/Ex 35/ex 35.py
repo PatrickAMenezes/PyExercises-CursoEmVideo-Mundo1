@@ -1,0 +1,11 @@
+import coin
+print('-'*45)
+money = float(input('Enter the price: R$'))
+print('-'*45)
+print(f'The half of R${money} is R${coin.half(money)}.')
+print(f'The double of R${money} is R${coin.double(money)}.')
+print(f'Increasing 10% of R${money}, we have R${coin.increase(money, 10)}.')
+print(f'Decreasing 10% of R${money}, we have R${coin.decrease(money, 10)}.')
+print('-'*45)
+print(' '*20, 'END')
+print('-'*45)
